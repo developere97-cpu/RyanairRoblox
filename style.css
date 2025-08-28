@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; background:#f6f6f6; margin:0; padding:0; text-align:center; }
+header { background:#00539f; color:white; padding:15px; }
+.logo h1 { margin:0; font-size:2em; }
+.logo p { margin:0; font-size:1em; }
+.welcome { color:#007bff; margin:20px 0; }
+
+.tabs { display:flex; justify-content:center; margin-bottom:20px; flex-wrap:wrap; }
+.tab-btn { padding:10px 20px; margin:2px; border:none; cursor:pointer; font-weight:bold; background:#ffc600; border-radius:4px; }
+.tab-btn.active { background:#e6b800; }
+
+.tab-content { display:none; padding:20px; background:white; max-width:500px; margin:0 auto; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+.tab-content.active { display:block; }
+
+input { width:80%; padding:10px; margin:5px 0; font-size:16px; }
+.btn { background:#ffc600; border:none; padding:12px 25px; font-weight:bold; cursor:pointer; border-radius:4px; margin-top:10px; }
+.btn:hover { background:#e6b800; }
+.notification { margin-top:15px; padding:12px; background:#e0ffe0; border:1px solid #00a000; display:none; }

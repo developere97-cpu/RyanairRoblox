@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryanair™ Roblox Mock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Ryanair™</h1>
+        <p>Roblox</p>
+    </div>
+</header>
+
+<main>
+    <h2 class="welcome">Welcome! 👋</h2>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('booking')">Booking</button>
+        <button class="tab-btn" onclick="openTab('checkin')">Check-in</button>
+        <button class="tab-btn" onclick="openTab('taxi')">Taxi</button>
+        <button class="tab-btn" onclick="openTab('bagdrop')">Bag Drop</button>
+        <button class="tab-btn" onclick="openTab('suitcase')">Suitcase Tag</button>
+    </div>
+
+    <!-- Booking Tab -->
+    <div id="booking" class="tab-content active">
+        <h3>Book Your Flight</h3>
+        <form id="bookingForm">
+            <input type="text" id="from" placeholder="From" required>
+            <input type="text" id="to" placeholder="To" required>
+            <button type="submit" class="btn">Book Flight</button>
+        </form>
+        <div id="bookingNotification" class="notification"></div>
+    </div>
+
+    <!-- Check-in Tab -->
+    <div id="checkin" class="tab-content">
+        <h3>Check-in Status</h3>
+        <ul id="checkinList">
+            <li>Check-in 1: <span class="status"></span></li>
+            <li>Check-in 2: <span class="status"></span></li>
+            <li>Check-in 3: <span class="status"></span></li>
+            <li>Check-in 4: <span class="status"></span></li>
+        </ul>
+        <button class="btn" onclick="updateCheckinStatus()">Refresh Status</button>
+    </div>
+
+    <!-- Taxi Tab -->
+    <div id="taxi" class="tab-content">
+        <h3>Taxi Booking</h3>
+        <form id="taxiForm">
+            <input type="text" id="taxiFrom" placeholder="Location" required>
+            <input type="text" id="taxiTo" placeholder="To" required>
+            <button type="submit" class="btn">Check Taxi</button>
+        </form>
+        <div id="taxiNotification" class="notification"></div>
+    </div>
+
+    <!-- Bag Drop Tab -->
+    <div id="bagdrop" class="tab-content">
+        <h3>Bag Drop Status</h3>
+        <p class="logo">Ryanair™ Roblox</p>
+        <p id="bagdropStatus"></p>
+        <button class="btn" onclick="updateBagDrop()">Refresh Bag Drop Status</button>
+    </div>
+
+    <!-- Suitcase Tag Tab -->
+    <div id="suitcase" class="tab-content">
+        <h3>Generate Your Suitcase Tag</h3>
+        <button class="btn" onclick="generateSuitcaseTag()">Get Tag</button>
+        <p id="suitcaseTag" class="notification"></p>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
